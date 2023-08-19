@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Travel Adventures - Explore the World</title>
+</head>
+<body>
+<nav id="navbar" class="fixed">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="intro">
+        <h1>Welcome to Travel Adventures</h1>
+        <p>Your gateway to exploring the world's most breathtaking destinations.</p>
+        <a href="#" class="cta-button">Book a Tour</a>
+    </section>
+    <section class="destinations">
+        <h2>Explore Destinations</h2>
+        <div class="destination-card">
+            <img src="thailand.jpg" alt="Thailand">
+            <h3>Thailand</h3>
+            <p>Experience the beauty of Thailand's landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="singapore.jpg" alt="Singapore">
+            <h3>Singapore</h3>
+            <p>Discover the vibrant city-state of Singapore.</p>
+        </div>
+        <div class="destination-card">
+            <img src="paris.jpg" alt="Paris, France">
+            <h3>Paris, France</h3>
+            <p>Explore the romantic streets of Paris.</p>
+        </div>
+        <div class="destination-card">
+            <img src="japan.jpg" alt="Tokyo, Japan">
+            <h3>Tokyo, Japan</h3>
+            <p>Experience the vibrant culture of Tokyo.</p>
+        </div>
+        <div class="destination-card">
+            <img src="bali.jpg" alt="Bali, Indonesia">
+            <h3>Bali, Indonesia</h3>
+            <p>Experience the vibrant culture of Tokyo.</p>
+        </div>
+        <div class="destination-card">
+            <img src="sydney.jpg" alt="Sydney, Australia">
+            <h3>Sydney, Australia</h3>
+            <p>Experience the vibrant culture of Tokyo.</p>
+        </div>
+        <!-- Add more destination cards here -->
+    </section>
+</main>
+<script>
+    // JavaScript to show content when scrolled enough
+    const destinationsSection = document.querySelector('.destinations');
+
+    function checkScroll() {
+        const triggerPosition = destinationsSection.offsetTop - window.innerHeight + 100;
+        if (window.scrollY >= triggerPosition) {
+            destinationsSection.classList.add('show');
+            window.removeEventListener('scroll', checkScroll);
+        }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+</script>
+</body>
+</html>
