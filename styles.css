@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    background-color: #263238; /* Darker background color */
+    background-color: #263238;
     transition: background-color 0.3s;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -36,7 +36,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #b0bec5; /* Lighter text color */
+    color: #b0bec5;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -60,34 +60,30 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     color: #000000;
 }
 
 .intro h1 {
     font-size: 46px;
     margin-bottom: 20px;
-    padding: 10px; /* Add padding for spacing */
-    border: 5px solid #000000; /* Add border */
-    display: inline-block; /* Make the border surround the text */
-    color: #000000; /* Title color */
+    padding: 10px;
+    border: 5px solid #000000;
+    display: inline-block;
+    color: #000000;
 }
 
 .intro p {
     font-size: 18px;
     margin-bottom: 30px;
-    padding: 5px; /* Add padding for spacing */
-    border: 5px solid #000000; /* Add border */
+    padding: 5px;
+    border: 5px solid #000000;
     display: inline-block;
-
 }
-
-
 
 .cta-button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #546e7a; /* Darker button color */
+    background-color: #546e7a;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
@@ -124,10 +120,10 @@ nav a:hover {
     flex: 0 0 calc(25% - 20px);
     text-align: center;
     padding: 20px;
-    border: 1px solid #37474f; /* Darker border color */
+    border: 1px solid #37474f;
     border-radius: 8px;
     margin: 0 10px 20px;
-    background-color: #263238; /* Darker background color */
+    background-color: #263238;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -150,15 +146,13 @@ nav a:hover {
 
 .destinations .destination-card p {
     font-size: 16px;
-    color: #b0bec5; /* Lighter text color */
+    color: #b0bec5;
 }
 
-/* Add styles for background change on scroll */
 nav.scrolled {
-    background-color: #212121; /* Darker background color */
+    background-color: #212121;
 }
 
-/* Add styles for menu item hover effect */
 nav a:hover {
     color: #e74c3c;
 }
